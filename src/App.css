@@ -1,0 +1,85 @@
+/* App Styles */
+
+/* Fonts */
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("./assets/fonts/NeueMontreal/PPNeueMontreal-Medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("./assets/fonts/NeueMontreal/PPNeueMontreal-Italic.otf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("./assets/fonts/NeueMontreal/PPNeueMontreal-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeueMontreal";
+    src: url("./assets/fonts/NeueMontreal/PPNeueMontreal-Thin.otf");
+    font-weight: thin;
+    font-style: normal;
+}
+
+/* Global Variables */
+:root {
+    --neutral-light: #EFF1F3;
+    --neutral-dark: #221E22;
+    /* might change this */
+    --neutral-mid: #BCBCBC;
+    --brilliant-sage:
+    #17B890;
+}
+
+/* Global Styles */
+
+body{
+    font-family: "NeueMontreal", Arial, Helvetica, sans-serif;
+}
+
+.light-body{
+    width: 100%;
+    min-height: 100vh;
+    color: var(--neutral-dark);
+    background: var(--neutral-light);
+}
+
+.dark-body{
+    width: 100%;
+    min-height: 100vh;
+    color: var(--neutral-light);
+    background: var(--neutral-dark)
+}
+
+/* Display */
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+/* Font */
+.font-size-5{
+    font-size: 20px;
+}
+
+.link:hover{
+    cursor: pointer;
+    color: var(--neutral-mid)
+}

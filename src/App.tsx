@@ -1,45 +1,21 @@
 // Libs
-import React from 'react';
-import {
-    createBrowserRouter,
-    RouterProvider,
-  } from "react-router-dom";
-// Styles
-import './App.css';
-import './Reset.css';
+import {useState} from 'react';
+import { RouterProvider } from "react-router-dom";
 // Routes
-import Root from "./routes/root";
-import About from "./routes/about";
-import Portfolio from "./routes/portfolio";
-import Contact from "./routes/contact";
-import ErrorPage from './routes/error';
-
-const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Root/>,
-      errorElement: <ErrorPage />,
-      children: [
-        {
-          path: "about",
-          element: <About/>,
-        },
-        {
-            path: "portfolio",
-            element: <Portfolio/>,
-        },
-        {
-            path: "contact",
-            element: <Contact/>,
-          },
-      ],
-    },
-  ]);
+import {router} from "./routes/Router"
+// Context
+import { ModeContext, ModeContextType, ModeType } from './contexts/ModeContext';
+// Styles
+import './reset.css';
+import './App.css';
 
 function App() {
+    const [mode, setMode] = useState<ModeType>("light")
   return (
     <>
+    <ModeContext.Provider value={{mode, setMode}}>
         <RouterProvider router={router} />
+    </ModeContext.Provider>
     </>
   );
 }
