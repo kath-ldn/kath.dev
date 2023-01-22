@@ -8,10 +8,10 @@ import "./Mode.css"
 export default function Mode() {
     const { mode, setMode } = useContext(ModeContext)
     return (
-      <aside id="mode" className="flex-row space-evenly">
-        <p className="link" onClick={()=>{setMode("dark")}}>dark</p>
+      <aside id="mode" className="flex-row space-evenly align-center">
+        <p className={mode === "dark" ? "selected" : "link"} onClick={()=>{setMode("dark")}}>dark</p>
         <p>-</p>
-        <p className="link" onClick={()=>{setMode("light")}}>light</p>
+        <p className={mode === "light" ? "selected" : "link"} onClick={()=>{setMode("light")}}>light</p>
       </aside>
     );
   }

@@ -1,6 +1,7 @@
 #mode{
     width: 80px;
-    position: sticky;
+    position: absolute;
     top: 0;
     right: 0;
+    margin: 10px 15px;
 }
