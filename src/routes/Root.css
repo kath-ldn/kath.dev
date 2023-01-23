@@ -50,6 +50,7 @@
 
 @media all and (min-width: 1024px /*var(--min-laptop)*/){
     .root-nav-container{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
