@@ -1,0 +1,26 @@
+.rotated-text-accent{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+}
+
+@media all and (min-width: 1024px /*var(--min-laptop)*/){
+    .rotated-text-accent{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        right: 40px;
+    }
+}
+
+.rotated-text{
+    position: relative;
+    right: -1px;
+    margin-bottom: 5px;
+}
+
+.rotate90 { 
+    transform: rotate(90deg);
+}

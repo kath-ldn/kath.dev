@@ -1,0 +1,11 @@
+.icons-container{
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+@media all and (min-width: 1024px /*var(--min-laptop)*/){
+    .icons-container{
+        left: 40px;
+    }
+}

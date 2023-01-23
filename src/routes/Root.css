@@ -1,0 +1,55 @@
+/* Layout */
+
+.route-root{
+    box-sizing: border-box;
+    padding: 160px 0 0 0px;
+}
+
+@media all and (min-width: 1024px /*var(--min-laptop)*/){
+    .route-root{
+        padding: 140px 0 0 100px;
+    }
+}
+
+/* Profile pic */
+.profile-pic-wrapper{
+    width: 90%;
+    height: fit-content;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.profile-pic{
+    width: 120%;
+}
+
+@media all and (min-width: 1024px /*var(--min-laptop)*/){
+/* Profile pic */
+    .profile-pic-wrapper{
+        width: 600px;
+        height: 600px;
+    }
+
+    .profile-pic{
+        width: 600px;
+    }
+}
+
+/* Nav */
+
+.root-nav-container{
+    display: none;
+    padding-left: 160px;
+    position: fixed;
+    right: 20%;
+}
+
+.root-nav-items{
+    padding: 16px 0; 
+}
+
+@media all and (min-width: 1024px /*var(--min-laptop)*/){
+    .root-nav-container{
+        display: block;
+    }
+}
