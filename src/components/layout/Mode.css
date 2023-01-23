@@ -9,6 +9,8 @@
 @media all and (min-width: 1024px /*var(--min-laptop)*/){
     #mode{
         width: 80px;
+        left: auto;
+        right: 0;
         margin: 10px 15px;
     }
 }
