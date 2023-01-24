@@ -1,6 +1,5 @@
 // Components
 import RootHeader from "../components/root/RootHeader";
-import { Nav } from "../components/shared/Nav";
 // Assets
 import ProfilePic from "../assets/images/profile-pic-bw.png"
 // Styles
@@ -15,7 +14,6 @@ export default function Root() {
                 <div className="profile-pic-wrapper">
                     <img className="profile-pic" alt="kaths-profile-pic" src={ProfilePic}/>
                 </div>
-                <Nav containerClass="root-nav-container" itemsClass="root-nav-items font-size-3"/>
             </div>
         </div>
     );

@@ -7,7 +7,8 @@
 
 @media all and (min-width: 1024px /*var(--min-laptop)*/){
     .route-root{
-        padding: 140px 0 0 100px;
+        align-items: center;
+        /* padding: 140px 0 0 100px; */
     }
 }
 
@@ -32,25 +33,5 @@
 
     .profile-pic{
         width: 600px;
-    }
-}
-
-/* Nav */
-
-.root-nav-container{
-    display: none;
-    padding-left: 160px;
-    position: fixed;
-    right: 20%;
-}
-
-.root-nav-items{
-    padding: 16px 0; 
-}
-
-@media all and (min-width: 1024px /*var(--min-laptop)*/){
-    .root-nav-container{
-        display: flex;
-        flex-direction: column;
     }
 }
