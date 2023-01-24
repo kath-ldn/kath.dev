@@ -15,7 +15,7 @@ export default function Root() {
                 <div className="profile-pic-wrapper">
                     <img className="profile-pic" src={ProfilePic}/>
                 </div>
-                <Nav containerClass="root-nav-container" itemsClass="root-nav-items font-size-2"/>
+                <Nav containerClass="root-nav-container" itemsClass="root-nav-items font-size-3"/>
             </div>
         </div>
     );

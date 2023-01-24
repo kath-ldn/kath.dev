@@ -16,8 +16,8 @@ export default function ErrorPage() {
             <div id="error-page" className="route-container flex-column align-center justify-space-evenly">
                 <div className="flex-column">
                     <h1 className="font-size-1 fit-content">Oops!</h1>
-                    <h2 className="font-size-3 fit-content">Error: {error.statusText || error.message}.</h2>
-                    <h2 className="font-size-3 fit-content">Click <Link style={linkStyles} to={`/`}><span className="link">here</span></Link> to go home.</h2>
+                    <h2 className="font-size-4 fit-content">Error: {error.statusText || error.message}.</h2>
+                    <h2 className="font-size-4 fit-content">Click <Link style={linkStyles} to={`/`}><span className="link">here</span></Link> to go home.</h2>
                 </div>
             </div>
         </>

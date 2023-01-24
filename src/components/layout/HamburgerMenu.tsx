@@ -39,7 +39,7 @@ export const HamburgerMenu = () => {
     const hamburgerMenuItem = (item: HamburgerMenuItems) => {
         return (
         <div className={`hamburger-menu-item hamburger-menu-${hamburgerMenuState}-item`} onClick={toggleHamburgerState}>
-            <Link style={linkStyles} to={`${item.link}`}><p className={`hamburger-menu-${hamburgerMenuState}-item-text font-size-3`}>{item.text}</p></Link>
+            <Link style={linkStyles} to={`${item.link}`}><p className={`hamburger-menu-${hamburgerMenuState}-item-text font-size-4`}>{item.text}</p></Link>
         </div>
         )
     }
