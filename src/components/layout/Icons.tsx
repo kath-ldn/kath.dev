@@ -17,10 +17,10 @@ export const Icons = () => {
     const svgFill = `fill-${mode === "light" ? "dark" : "light"}`;
     return (
       <div className={`icons-container fit-content flex-column align-center`}>
-            <a href={"mailto:katharineturner3@gmail.com"} className={`${svgFill} fit-content`}><Email/></a>
-            <a href={"https://github.com/kath-ldn"} className={`${svgFill} fit-content`}><GitHub/></a>
-            <a href={"https://www.linkedin.com/in/katharine-turner/"}  className={`${svgFill} fit-content`}><LinkedIn/></a>
-        <Stalk height={40} width={2}/>
+            <a href={"mailto:katharineturner3@gmail.com"} className={`icon ${svgFill}`}><Email/></a>
+            <a href={"https://github.com/kath-ldn"} className={`icon ${svgFill}`}><GitHub/></a>
+            <a href={"https://www.linkedin.com/in/katharine-turner/"}  className={`icon ${svgFill}`}><LinkedIn/></a>
+        <Stalk height={40} width={2} marginTop={2}/>
       </div>
     );
 }

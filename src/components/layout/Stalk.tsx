@@ -7,12 +7,13 @@ import { ModeContext } from "../../contexts/ModeContext";
 type StalkType = {
     height: number;
     width: number;
+    marginTop?: number;
 }
 
-export const Stalk = ({height, width}: StalkType) => {
+export const Stalk = ({height, width, marginTop}: StalkType) => {
     const { mode, setMode } = useContext(ModeContext)
     return(
-        <div className={`${mode === "light" ? "background-dark" : "background-light"}`} style={{height: `${height}px`, width: `${width}px`, marginTop: `20px`}}>
+        <div className={`${mode === "light" ? "background-dark" : "background-light"}`} style={{height: `${height}px`, width: `${width}px`, marginTop: `${marginTop ? marginTop : 20}px`}}>
         </div>
     )
 }

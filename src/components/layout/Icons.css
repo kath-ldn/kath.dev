@@ -4,8 +4,20 @@
     right: 20px;
 }
 
+.icon{
+    width: 25px;
+    margin: 2px 0;
+}
+
 @media all and (min-width: 1024px /*var(--min-laptop)*/){
+    .icon{
+        width: 40px;
+    }
+    
     .icons-container{
+        position: fixed;
+        bottom: 0;
+        right: auto;
         left: 40px;
     }
 }
