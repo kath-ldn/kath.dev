@@ -129,6 +129,13 @@ body{
     font-size: 12px;
 }
 
+/* Reduce font-size-1 for tiny phones */
+@media all and (max-width: 320px /*var(--min-laptop)*/){
+    .font-size-1{
+        font-size: 60px;
+    }
+}
+
 @media all and (min-width: 1024px /*var(--min-laptop)*/){
     .font-size-1{
         font-size: 180px;
