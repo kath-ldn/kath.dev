@@ -1,42 +1,102 @@
+/* Container */
 .hamburger-menu-container{
-    display: flex;
-    flex-direction: column;
-    margin: 8px;
     position: fixed;
     top: 0;
     right: 0;
-}
-/* 
-.hamburger-menu-container:hover{
-    color: var(--brilliant-sage)
-} */
-
-.hamburger-menu-item{
-    background-color: currentColor;
-    width: 38px;
-    height: 4px;
-    border-radius: 2px;
-    margin: 3px;
-    transition: 0.75s;
-
-}
-
-.hamburger-menu-item-top-open{
-    transform: translate(0, 10px) rotate(45deg);
-    transition: 0.75s;
-}
-
-.hamburger-menu-item-mid-open{
-    background-color: transparent;
-}
-
-.hamburger-menu-item-btm-open{
-    transform: translate(0, -10px) rotate(-45deg);
-    transition: 0.75s;
 }
 
 @media all and (min-width: 1024px /*var(--min-laptop)*/){
     .hamburger-menu-container{
         display: none;
     }
+}
+
+/* Icon */
+.hamburger-icon-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    cursor: pointer;
+}
+
+/* 
+.hamburger-icon-container:hover{
+    color: var(--brilliant-sage)
+} */
+
+.hamburger-icon-layer{
+    background-color: currentColor;
+    width: 38px;
+    height: 4px;
+    border-radius: 2px;
+    margin: 3px;
+    transition: 0.75s, background-color 0.25s;
+}
+
+.hamburger-icon-layer-top-selected{
+    transform: translate(0, 10px) rotate(45deg);
+    transition: 0.75s;
+}
+
+.hamburger-icon-layer-mid-selected{
+    background-color: transparent;
+    transition: background-color 0.25s;
+
+}
+
+.hamburger-icon-layer-btm-selected{
+    transform: translate(0, -10px) rotate(-45deg);
+    transition: 0.75s;
+}
+
+/* Menu content */
+
+.hamburger-menu-item{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.hamburger-menu-open-header{
+    width: 100vw;
+    height: 82px;
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: solid 1px currentColor;
+    transition: border-bottom 0.5s;
+}
+
+.hamburger-menu-closed-header{
+    width: 100vw;
+    height: 82px;
+    box-sizing: border-box;
+    border-bottom: solid 0px currentColor;
+    transition: border-bottom 0.3s;
+}
+
+.hamburger-menu-closed-item{
+    height: 0px;
+    border-bottom: solid 0px currentColor;
+    transition: height 0.75s, border-bottom 0.3s;
+}
+
+.hamburger-menu-open-item{
+    height: 82px;
+    border-bottom: solid 1px currentColor;
+    transition: height 0.75s, border-bottom 0.75s;
+}
+
+.hamburger-menu-open-item-text{
+    transition: 1s;
+    color: currentColor;
+}
+
+.hamburger-menu-closed-item-text{
+    transition: 0.5s;
+    color: transparent;
 }
