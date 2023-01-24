@@ -1,0 +1,45 @@
+.skills-icons-container{
+    display: none;
+}
+
+@media all and (min-width: 1024px /*var(--min-laptop)*/){
+    .skills-icons-container{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.skills-icon{
+    min-height: 50px;
+    min-width: 50px;
+    fill: currentColor;
+    margin: 20px 10px;
+    display: block;
+    margin: 10px;
+}
+
+/* Profile pic */
+.about-image-wrapper{
+    margin-top: 25px;
+    width: 100%;
+    height: fit-content;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.about-image{
+    width: 150%;
+    position: relative;
+    right: 30%;
+}
+
+@media all and (min-width: 1024px /*var(--min-laptop)*/){
+/* Profile pic */
+    .about-image-wrapper{
+    }
+
+    .about-image{
+        width: 100%;
+        right: 0;
+    }
+}
