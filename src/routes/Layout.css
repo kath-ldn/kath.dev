@@ -1,0 +1,17 @@
+.layout-nav-container{
+    display: none;
+}
+
+@media all and (min-width: 1024px /*var(--min-laptop)*/){
+    .layout-nav-container{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+        left: 16.5%;
+    }
+
+    .layout-nav-items{
+        margin: 10px 20px 0 0;
+    }
+}
