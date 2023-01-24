@@ -54,29 +54,17 @@
 
 /* Menu content */
 
+.hamburger-menu-content{
+    box-shadow: 2px 2px 5px var(--neutral-mid);
+}
+
+/* TRANSITION FROM TOP */
 .hamburger-menu-item{
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-}
-
-.hamburger-menu-open-header{
-    width: 100vw;
-    height: 82px;
-    display: flex;
-    box-sizing: border-box;
-    border-bottom: solid 1px currentColor;
-    transition: border-bottom 0.5s;
-}
-
-.hamburger-menu-closed-header{
-    width: 100vw;
-    height: 82px;
-    box-sizing: border-box;
-    border-bottom: solid 0px currentColor;
-    transition: border-bottom 0.3s;
 }
 
 .hamburger-menu-closed-item{
@@ -90,6 +78,37 @@
     border-bottom: solid 1px currentColor;
     transition: height 0.75s, border-bottom 0.75s;
 }
+
+/* TRANSITION FROM RHS */
+/* .hamburger-menu-item{
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.hamburger-menu-closed-item{
+    width: 0px;
+    border-bottom: solid 0px currentColor;
+    transition: width 0.75s, border-bottom 0.3s;
+}
+
+.hamburger-menu-open-item{
+    width: 100vw;
+    border-bottom: solid 1px currentColor;
+    transition: width 0.75s, border-bottom 0.75s;
+} */
+
+/* .hamburger-menu-open-header{
+    transition: border-bottom 0.5s;
+}
+
+.hamburger-menu-closed-header{
+    height: 82px;
+    border-bottom: solid 0px currentColor;
+    transition: border-bottom 0.3s;
+} */
 
 .hamburger-menu-open-item-text{
     transition: 1s;
