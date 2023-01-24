@@ -9,7 +9,7 @@ import "./Root.css"
 
 export default function Root() {
     return (
-        <div className="route-container route-root flex-row flex-column justify-space-between">
+        <div className="route-container route-root flex-column justify-space-between">
             <RootHeader/>
             <div className="root-bottom flex-row">
                 <div className="profile-pic-wrapper">
