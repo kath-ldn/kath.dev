@@ -4,7 +4,7 @@ import { RouterProvider } from "react-router-dom";
 // Routes
 import {router} from "./routes/Router"
 // Context
-import { ModeContext, ModeContextType, ModeType } from './contexts/ModeContext';
+import { ModeContext, ModeType } from './contexts/ModeContext';
 // Styles
 import './reset.css';
 import './App.css';

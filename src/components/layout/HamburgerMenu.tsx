@@ -14,7 +14,7 @@ type HamburgerMenuItems = {
 
 export const HamburgerMenu = () => {
     const [ hamburgerMenuState, sethamburgerMenuState ] = useState<HamburgerMenuOptions>("closed")
-    const { mode, setMode } = useContext(ModeContext)
+    const { mode } = useContext(ModeContext)
     const menuItems = [
         {
             text: "home",
@@ -38,7 +38,7 @@ export const HamburgerMenu = () => {
     }
     const hamburgerMenuItem = (item: HamburgerMenuItems) => {
         return (
-        <div className={`hamburger-menu-item hamburger-menu-${hamburgerMenuState}-item`} onClick={toggleHamburgerState}>
+        <div key={item.text} className={`hamburger-menu-item hamburger-menu-${hamburgerMenuState}-item`} onClick={toggleHamburgerState}>
             <Link style={linkStyles} to={`${item.link}`}><p className={`hamburger-menu-${hamburgerMenuState}-item-text font-size-4`}>{item.text}</p></Link>
         </div>
         )

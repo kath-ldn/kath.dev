@@ -13,7 +13,7 @@ export default function Root() {
             <RootHeader/>
             <div className="root-bottom flex-row">
                 <div className="profile-pic-wrapper">
-                    <img className="profile-pic" src={ProfilePic}/>
+                    <img className="profile-pic" alt="kaths-profile-pic" src={ProfilePic}/>
                 </div>
                 <Nav containerClass="root-nav-container" itemsClass="root-nav-items font-size-3"/>
             </div>

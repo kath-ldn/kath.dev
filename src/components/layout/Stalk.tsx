@@ -11,7 +11,7 @@ type StalkType = {
 }
 
 export const Stalk = ({height, width, marginTop}: StalkType) => {
-    const { mode, setMode } = useContext(ModeContext)
+    const { mode } = useContext(ModeContext)
     return(
         <div className={`${mode === "light" ? "background-dark" : "background-light"}`} style={{height: `${height}px`, width: `${width}px`, marginTop: `${marginTop ? marginTop : 20}px`}}>
         </div>

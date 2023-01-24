@@ -12,7 +12,7 @@ import { ModeContext } from "../../contexts/ModeContext";
 import "./Icons.css"
 
 export const Icons = () => {
-    const { mode, setMode } = useContext(ModeContext)
+    const { mode } = useContext(ModeContext)
 
     const svgFill = `fill-${mode === "light" ? "dark" : "light"}`;
     return (
