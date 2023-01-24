@@ -28,7 +28,6 @@ export const HamburgerMenu = () => {
                 </div>
                 {/* Menu content */}
                 <div className={`${mode === "light" ? "background-light" : "background-dark"}`}>
-                {/* <div className={`hamburger-menu-item hamburger-menu-item-${hamburgerMenuState ? "open" : "closed"}`}></div> */}
                 <div className={`hamburger-menu-${hamburgerMenuState}-header`}></div>
                     {menuItems.map((item)=>{return hamburgerMenuItem(item)})}
                 </div>
