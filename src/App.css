@@ -166,6 +166,11 @@ body{
     color: var(--neutral-mid)
 }
 
+.link{
+    text-decoration: none;
+    color: var(--neutral-mid)
+}
+
 .link:hover{
     cursor: pointer;
     color: var(--brilliant-sage);
